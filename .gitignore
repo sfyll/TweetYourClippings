@@ -1,0 +1,7 @@
+__pycache__*
+env/
+KindleClippings/
+.api_enc.txt
+.pk.txt
+tweeted_clipping_hashes.txt
+.DS_STORE
