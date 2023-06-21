@@ -13,7 +13,7 @@ class main:
         self.image_builder = ImageBuilder()
         self.tweeterHandler = TwitterHandler(pwd ,key)
 
-    def run(self) -> None:
+    async def run(self) -> None:
         self.image_builder.generate_clipping_data()
         self.tweeterHandler.tweet_image(self.image_builder.clipping)
 
@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     async def periodic(seconds):
         while True:
-            executor.run()
+            await executor.run()
             await asyncio.sleep(seconds)
 
     def stop():
