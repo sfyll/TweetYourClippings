@@ -15,7 +15,6 @@ class main:
 
     def run(self) -> None:
         self.image_builder.generate_clipping_data()
-        self.image_builder.clipping.image.show()
         self.tweeterHandler.tweet_image(self.image_builder.clipping)
 
 if __name__ == "__main__":
